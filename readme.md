@@ -1,7 +1,7 @@
 # TailNode Database Project
 
 ## Project Overview
-This project involves sharing access to two different collections in a databases: one containing data from a Dummy API and another containing data scraped from a book website. The databases are hosted on MongoDB Atlas and are shared for collaborative purposes.
+This project involves using the below APIs to fetch Users and their corresponding posts data, Scrape books data and store it in their respective Databases on MongoDB Atlas, providing access to two different collections: one containing data from the Dummy API and another containing data scraped from a book website. The databases are hosted on MongoDB Atlas and are shared for collaborative purposes.
 
 ## Contents
 - `users_list.py`: Python script to fetch users data from the Dummy API (https://dummyapi.io/data/v1/user) and store it in a MongoDB database.
@@ -45,7 +45,10 @@ To access the MongoDB Atlas database using the provided URI, follow these steps:
 3. **Share URI with MongoDB Atlas Project Access:**
    - If you have access to a MongoDB Atlas project, you can share the provided URI with other project members.
    - They can use this URI to connect to the database and view collections using MongoDB Atlas web interface.
-   - URI : "mongodb+srv://satyamvirat:mnVq8nXwhXZB70mz@cluster0.9flhz7u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+   - URI : 
+   ```bash
+      mongodb+srv://satyamvirat:mnVq8nXwhXZB70mz@cluster0.9flhz7u.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+   ```
 
 ## Potential Duplicate Key Error
 If you encounter a `pymongo.errors.DuplicateKeyError` while running the scripts, it means there is already a document with the same `_id` value in the MongoDB collection. This error occurs because MongoDB does not allow multiple documents with the same `_id`.
